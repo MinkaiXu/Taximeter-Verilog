@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Interface Version="1" Minor="1">
+	<Ifc Id="ROOT" Top="1">
+		<Bus Id="light">
+			<Port Id="0" Dir="IN"/>
+			<Port Id="1" Dir="IN"/>
+		</Bus>
+		<Bus Id="a_to_g">
+			<Port Id="0" Dir="OUT"/>
+			<Port Id="1" Dir="OUT"/>
+			<Port Id="2" Dir="OUT"/>
+			<Port Id="3" Dir="OUT"/>
+			<Port Id="4" Dir="OUT"/>
+			<Port Id="5" Dir="OUT"/>
+			<Port Id="6" Dir="OUT"/>
+		</Bus>
+		<Bus Id="enable">
+			<Port Id="0" Dir="OUT"/>
+			<Port Id="1" Dir="OUT"/>
+			<Port Id="2" Dir="OUT"/>
+			<Port Id="3" Dir="OUT"/>
+		</Bus>
+		<Port Id="restart" Dir="IN"/>
+		<Port Id="stopcar" Dir="IN"/>
+		<Port Id="endcar" Dir="IN"/>
+		<Port Id="park" Dir="IN"/>
+		<Port Id="clk" Dir="IN"/>
+		<Port Id="showdisatnce" Dir="IN"/>
+		<Port Id="point" Dir="OUT"/>
+	</Ifc>
+</Interface>
+

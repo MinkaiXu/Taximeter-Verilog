@@ -1,0 +1,5 @@
+verilog work "seg7ment_sub.v"
+verilog work "light_sub.v"
+verilog work "findfnum_sub.v"
+verilog work "choose_show_sub.v"
+verilog work "taxi_top.v"

@@ -1,0 +1,48 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "a_to_g[0]" LOC = M12;
+NET "a_to_g[1]" LOC = L13;
+NET "a_to_g[2]" LOC = P12;
+NET "a_to_g[3]" LOC = N11;
+NET "a_to_g[4]" LOC = N14;
+NET "a_to_g[5]" LOC = H12;
+NET "a_to_g[6]" LOC = L14;
+NET "enable[3]" LOC = F12;
+NET "enable[2]" LOC = J12;
+NET "enable[1]" LOC = M13;
+NET "enable[0]" LOC = K14;
+NET "light[0]" LOC = N3;
+NET "light[1]" LOC = E2;
+NET "clk" LOC = B8;
+NET "endcar" LOC = F3;
+NET "park" LOC = G3;
+NET "point" LOC = N13;
+NET "restart" LOC = K3;
+NET "showdistance" LOC = L3;
+NET "showaltogether" LOC = P11;
+NET "restartall" LOC = B4;
+
+# PlanAhead Generated IO constraints 
+
+NET "a_to_g[0]" IOSTANDARD = LVCMOS33;
+NET "a_to_g[1]" IOSTANDARD = LVCMOS33;
+NET "a_to_g[2]" IOSTANDARD = LVCMOS33;
+NET "a_to_g[3]" IOSTANDARD = LVCMOS33;
+NET "a_to_g[4]" IOSTANDARD = LVCMOS33;
+NET "a_to_g[5]" IOSTANDARD = LVCMOS33;
+NET "a_to_g[6]" IOSTANDARD = LVCMOS33;
+NET "enable[0]" IOSTANDARD = LVCMOS33;
+NET "enable[1]" IOSTANDARD = LVCMOS33;
+NET "enable[2]" IOSTANDARD = LVCMOS33;
+NET "enable[3]" IOSTANDARD = LVCMOS33;
+NET "light[0]" IOSTANDARD = LVCMOS33;
+NET "light[1]" IOSTANDARD = LVCMOS33;
+NET "clk" IOSTANDARD = LVCMOS33;
+NET "showaltogether" IOSTANDARD = LVCMOS33;
+NET "endcar" IOSTANDARD = LVCMOS33;
+NET "park" IOSTANDARD = LVCMOS33;
+NET "point" IOSTANDARD = LVCMOS33;
+NET "restart" IOSTANDARD = LVCMOS33;
+NET "showdistance" IOSTANDARD = LVCMOS33;
+NET "restartall" IOSTANDARD = LVCMOS33;

@@ -1,0 +1,138 @@
+--------------------------------------------------------------------------------
+Release 14.2 Trace  (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+D:\Xilinx\14.2\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
+-n 3 -fastpaths -xml taxi_top.twx taxi_top.ncd -o taxi_top.twr taxi_top.pcf
+-ucf taxi_top.ucf
+
+Design file:              taxi_top.ncd
+Physical constraint file: taxi_top.pcf
+Device,package,speed:     xc3s100e,cp132,-5 (PRODUCTION 1.27 2012-07-09)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+endcar      |   10.522(R)|   -0.039(R)|clk_BUFGP         |   0.000|
+light<0>    |   12.087(R)|   -1.256(R)|clk_BUFGP         |   0.000|
+light<1>    |   11.990(R)|   -0.106(R)|clk_BUFGP         |   0.000|
+park        |   10.885(R)|   -0.441(R)|clk_BUFGP         |   0.000|
+restart     |   10.136(R)|   -0.324(R)|clk_BUFGP         |   0.000|
+restartall  |   10.319(R)|    0.574(R)|clk_BUFGP         |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock clk to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+a_to_g<0>   |   16.812(R)|clk_BUFGP         |   0.000|
+a_to_g<1>   |   16.325(R)|clk_BUFGP         |   0.000|
+a_to_g<2>   |   16.383(R)|clk_BUFGP         |   0.000|
+a_to_g<3>   |   16.620(R)|clk_BUFGP         |   0.000|
+a_to_g<4>   |   16.856(R)|clk_BUFGP         |   0.000|
+a_to_g<5>   |   16.427(R)|clk_BUFGP         |   0.000|
+a_to_g<6>   |   16.349(R)|clk_BUFGP         |   0.000|
+enable<0>   |   11.337(R)|clk_BUFGP         |   0.000|
+enable<1>   |   12.004(R)|clk_BUFGP         |   0.000|
+enable<2>   |   11.251(R)|clk_BUFGP         |   0.000|
+enable<3>   |   11.906(R)|clk_BUFGP         |   0.000|
+point       |   11.912(R)|clk_BUFGP         |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   11.704|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+light<0>       |a_to_g<0>      |   16.085|
+light<0>       |a_to_g<1>      |   15.598|
+light<0>       |a_to_g<2>      |   15.656|
+light<0>       |a_to_g<3>      |   15.893|
+light<0>       |a_to_g<4>      |   16.129|
+light<0>       |a_to_g<5>      |   15.700|
+light<0>       |a_to_g<6>      |   15.622|
+light<0>       |enable<0>      |   10.624|
+light<0>       |enable<1>      |   11.291|
+light<0>       |enable<2>      |   10.538|
+light<0>       |enable<3>      |   11.193|
+light<0>       |point          |   11.199|
+light<1>       |a_to_g<0>      |   15.267|
+light<1>       |a_to_g<1>      |   14.780|
+light<1>       |a_to_g<2>      |   14.838|
+light<1>       |a_to_g<3>      |   15.075|
+light<1>       |a_to_g<4>      |   15.311|
+light<1>       |a_to_g<5>      |   14.882|
+light<1>       |a_to_g<6>      |   14.804|
+light<1>       |enable<0>      |    9.806|
+light<1>       |enable<1>      |   10.473|
+light<1>       |enable<2>      |    9.720|
+light<1>       |enable<3>      |   10.375|
+light<1>       |point          |   10.381|
+showaltogether |a_to_g<0>      |   15.090|
+showaltogether |a_to_g<1>      |   14.199|
+showaltogether |a_to_g<2>      |   14.257|
+showaltogether |a_to_g<3>      |   15.274|
+showaltogether |a_to_g<4>      |   15.084|
+showaltogether |a_to_g<5>      |   15.400|
+showaltogether |a_to_g<6>      |   14.713|
+showdistance   |a_to_g<0>      |   12.867|
+showdistance   |a_to_g<1>      |   12.555|
+showdistance   |a_to_g<2>      |   12.613|
+showdistance   |a_to_g<3>      |   12.675|
+showdistance   |a_to_g<4>      |   12.911|
+showdistance   |a_to_g<5>      |   12.565|
+showdistance   |a_to_g<6>      |   12.404|
+---------------+---------------+---------+
+
+
+Analysis completed Mon Apr 23 10:44:17 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 213 MB
+
+
+

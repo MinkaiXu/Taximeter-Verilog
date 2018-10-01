@@ -1,0 +1,174 @@
+
+****** PlanAhead v14.2 (64-bit)
+  **** Build 194362 by xbuild on Fri Jul 20 18:52:11 MDT 2012
+    ** Copyright 1986-1999, 2001-2012 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from D:/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [D:/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [D:/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source E:/fpga/homework2/Taxi/pa.fromHdl.tcl
+# create_project -name Taxi -dir "E:/fpga/homework2/Taxi/planAhead_run_1" -part xc3s100ecp132-5
+Parsing template File [D:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/verilog.xml].
+Finished parsing template File [D:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/verilog.xml].
+Parsing template File [D:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/vhdl.xml].
+Finished parsing template File [D:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/vhdl.xml].
+Parsing template File [D:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/ucf.xml].
+Finished parsing template File [D:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/ucf.xml].
+create_project: Time (s): elapsed = 00:00:07 . Memory (MB): peak = 395.402 ; gain = 56.809
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "taxi_top.ucf" [current_fileset -constrset]
+Adding file 'E:/fpga/homework2/Taxi/taxi_top.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {seg7ment_sub.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {light_sub.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {findfnum_sub.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {taxi_top.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top taxi_top $srcset
+# add_files [list {taxi_top.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc3s100ecp132-5
+Using Verific elaboration
+Parsing VHDL file "D:/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Analyzing Verilog file "E:/fpga/homework2/Taxi/seg7ment_sub.v" into library work
+Analyzing Verilog file "E:/fpga/homework2/Taxi/light_sub.v" into library work
+Analyzing Verilog file "E:/fpga/homework2/Taxi/findfnum_sub.v" into library work
+Analyzing Verilog file "E:/fpga/homework2/Taxi/taxi_top.v" into library work
+INFO: [Designutils 20-910] Reading macro library D:/Xilinx/14.2/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn
+Parsing EDIF File [D:/Xilinx/14.2/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Finished Parsing EDIF File [D:/Xilinx/14.2/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Loading clock regions from D:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s100e/ClockRegion.xml
+Loading clock buffers from D:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s100e/ClockBuffers.xml
+Loading package from D:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s100e/cp132/Package.xml
+Loading io standards from D:/Xilinx/14.2/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from D:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s100e/cp132/SSORules.xml
+Loading list of drcs for the architecture : D:/Xilinx/14.2/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/drc.xml
+INFO: [Timing 38-77] Reading timing library D:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-5.lib.
+INFO: [Timing 38-34] Done reading timing library D:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-5.lib.
+Parsing UCF File [E:/fpga/homework2/Taxi/taxi_top.ucf]
+Finished Parsing UCF File [E:/fpga/homework2/Taxi/taxi_top.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 6287b34c
+open_rtl_design: Time (s): elapsed = 00:00:22 . Memory (MB): peak = 503.086 ; gain = 102.895
+startgroup
+set_property package_pin M12 [get_ports {a_to_g[0]}]
+endgroup
+startgroup
+set_property package_pin L13 [get_ports {a_to_g[1]}]
+endgroup
+startgroup
+set_property package_pin P12 [get_ports {a_to_g[2]}]
+endgroup
+startgroup
+set_property package_pin N11 [get_ports {a_to_g[3]}]
+endgroup
+startgroup
+set_property package_pin N14 [get_ports {a_to_g[4]}]
+endgroup
+startgroup
+set_property package_pin H12 [get_ports {a_to_g[5]}]
+endgroup
+startgroup
+set_property package_pin L14 [get_ports {a_to_g[6]}]
+endgroup
+startgroup
+set_property package_pin F12 [get_ports {enable[0]}]
+endgroup
+startgroup
+set_property package_pin J12 [get_ports {enable[1]}]
+endgroup
+startgroup
+set_property package_pin M13 [get_ports {enable[2]}]
+endgroup
+startgroup
+set_property package_pin K14 [get_ports {enable[3]}]
+endgroup
+startgroup
+set_property package_pin N3 [get_ports {light[0]}]
+endgroup
+startgroup
+set_property package_pin E2 [get_ports {light[1]}]
+endgroup
+startgroup
+set_property package_pin B8 [get_ports clk]
+endgroup
+set_property package_pin "" [get_ports [list  showdisatnce]]
+set_property package_pin "" [get_ports [list  endcar]]
+startgroup
+set_property package_pin M5 [get_ports restart]
+endgroup
+startgroup
+set_property package_pin M11 [get_ports showdisatnce]
+endgroup
+startgroup
+set_property package_pin N4 [get_ports point]
+endgroup
+startgroup
+set_property package_pin P7 [get_ports park]
+endgroup
+startgroup
+set_property package_pin B4 [get_ports endcar]
+endgroup
+startgroup
+set_property package_pin P7 [get_ports park]
+endgroup
+startgroup
+set_property package_pin B4 [get_ports endcar]
+endgroup
+startgroup
+set_property package_pin K3 [get_ports park]
+endgroup
+startgroup
+set_property package_pin L3 [get_ports point]
+endgroup
+set_property package_pin "" [get_ports [list  stopcar]]
+startgroup
+set_property package_pin N5 [get_ports endcar]
+endgroup
+startgroup
+set_property package_pin P6 [get_ports park]
+endgroup
+startgroup
+set_property package_pin F3 [get_ports endcar]
+endgroup
+startgroup
+set_property package_pin G3 [get_ports park]
+endgroup
+startgroup
+set_property package_pin B4 [get_ports point]
+endgroup
+startgroup
+set_property package_pin K3 [get_ports restart]
+endgroup
+startgroup
+set_property package_pin L3 [get_ports showdisatnce]
+endgroup
+startgroup
+set_property package_pin P11 [get_ports stopcar]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list {a_to_g[0]} {a_to_g[1]} {a_to_g[2]} {a_to_g[3]} {a_to_g[4]} {a_to_g[5]} {a_to_g[6]}]]
+set_property iostandard LVCMOS33 [get_ports [list {enable[0]} {enable[1]} {enable[2]} {enable[3]}]]
+set_property iostandard LVCMOS33 [get_ports [list {light[0]} {light[1]}]]
+set_property iostandard LVCMOS33 [get_ports [list clk]]
+set_property iostandard LVCMOS25 [get_ports [list endcar]]
+set_property iostandard LVCMOS33 [get_ports [list stopcar]]
+set_property iostandard LVCMOS33 [get_ports [list endcar]]
+set_property iostandard LVCMOS33 [get_ports [list park]]
+set_property iostandard LVCMOS33 [get_ports [list point]]
+set_property iostandard LVCMOS33 [get_ports [list restart]]
+set_property iostandard LVCMOS33 [get_ports [list showdisatnce]]
+save_design
+exit
+INFO: [Common 17-206] Exiting PlanAhead...
+INFO: [Common 17-83] Releasing license: PlanAhead

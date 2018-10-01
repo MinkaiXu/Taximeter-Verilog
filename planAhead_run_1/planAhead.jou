@@ -1,0 +1,118 @@
+#-----------------------------------------------------------
+# PlanAhead v14.2 (64-bit)
+# Build 194362 by xbuild on Fri Jul 20 18:52:11 MDT 2012
+# Start of session at: Sun Apr 16 16:40:41 2017
+# Process ID: 7516
+# Log file: E:/fpga/homework2/Taxi/planAhead_run_1/planAhead.log
+# Journal file: E:/fpga/homework2/Taxi/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source E:/fpga/homework2/Taxi/pa.fromHdl.tcl
+startgroup
+set_property package_pin M12 [get_ports {a_to_g[0]}]
+endgroup
+startgroup
+set_property package_pin L13 [get_ports {a_to_g[1]}]
+endgroup
+startgroup
+set_property package_pin P12 [get_ports {a_to_g[2]}]
+endgroup
+startgroup
+set_property package_pin N11 [get_ports {a_to_g[3]}]
+endgroup
+startgroup
+set_property package_pin N14 [get_ports {a_to_g[4]}]
+endgroup
+startgroup
+set_property package_pin H12 [get_ports {a_to_g[5]}]
+endgroup
+startgroup
+set_property package_pin L14 [get_ports {a_to_g[6]}]
+endgroup
+startgroup
+set_property package_pin F12 [get_ports {enable[0]}]
+endgroup
+startgroup
+set_property package_pin J12 [get_ports {enable[1]}]
+endgroup
+startgroup
+set_property package_pin M13 [get_ports {enable[2]}]
+endgroup
+startgroup
+set_property package_pin K14 [get_ports {enable[3]}]
+endgroup
+startgroup
+set_property package_pin N3 [get_ports {light[0]}]
+endgroup
+startgroup
+set_property package_pin E2 [get_ports {light[1]}]
+endgroup
+startgroup
+set_property package_pin B8 [get_ports clk]
+endgroup
+set_property package_pin "" [get_ports [list  showdisatnce]]
+set_property package_pin "" [get_ports [list  endcar]]
+startgroup
+set_property package_pin M5 [get_ports restart]
+endgroup
+startgroup
+set_property package_pin M11 [get_ports showdisatnce]
+endgroup
+startgroup
+set_property package_pin N4 [get_ports point]
+endgroup
+startgroup
+set_property package_pin P7 [get_ports park]
+endgroup
+startgroup
+set_property package_pin B4 [get_ports endcar]
+endgroup
+startgroup
+set_property package_pin P7 [get_ports park]
+endgroup
+startgroup
+set_property package_pin B4 [get_ports endcar]
+endgroup
+startgroup
+set_property package_pin K3 [get_ports park]
+endgroup
+startgroup
+set_property package_pin L3 [get_ports point]
+endgroup
+set_property package_pin "" [get_ports [list  stopcar]]
+startgroup
+set_property package_pin N5 [get_ports endcar]
+endgroup
+startgroup
+set_property package_pin P6 [get_ports park]
+endgroup
+startgroup
+set_property package_pin F3 [get_ports endcar]
+endgroup
+startgroup
+set_property package_pin G3 [get_ports park]
+endgroup
+startgroup
+set_property package_pin B4 [get_ports point]
+endgroup
+startgroup
+set_property package_pin K3 [get_ports restart]
+endgroup
+startgroup
+set_property package_pin L3 [get_ports showdisatnce]
+endgroup
+startgroup
+set_property package_pin P11 [get_ports stopcar]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list {a_to_g[0]} {a_to_g[1]} {a_to_g[2]} {a_to_g[3]} {a_to_g[4]} {a_to_g[5]} {a_to_g[6]}]]
+set_property iostandard LVCMOS33 [get_ports [list {enable[0]} {enable[1]} {enable[2]} {enable[3]}]]
+set_property iostandard LVCMOS33 [get_ports [list {light[0]} {light[1]}]]
+set_property iostandard LVCMOS33 [get_ports [list clk]]
+set_property iostandard LVCMOS25 [get_ports [list endcar]]
+set_property iostandard LVCMOS33 [get_ports [list stopcar]]
+set_property iostandard LVCMOS33 [get_ports [list endcar]]
+set_property iostandard LVCMOS33 [get_ports [list park]]
+set_property iostandard LVCMOS33 [get_ports [list point]]
+set_property iostandard LVCMOS33 [get_ports [list restart]]
+set_property iostandard LVCMOS33 [get_ports [list showdisatnce]]
+save_design
